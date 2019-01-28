@@ -41,6 +41,7 @@
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		4EB81E2ED03847C08A5BF70C /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BDE7D8C6B3465EB8EFB90E /* libRNCWebView.a */; };
 		49BFB2872C41406684C7A791 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F41D1033578C47FEA38BFDB3 /* libSplashScreen.a */; };
+		D388595AC7BD4388B7D78B3C /* libRNCookieManagerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E5296556F14E72B9AED01A /* libRNCookieManagerIOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -352,6 +353,8 @@
 		E7BDE7D8C6B3465EB8EFB90E /* libRNCWebView.a */ = {isa = PBXFileReference; name = "libRNCWebView.a"; path = "libRNCWebView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		9FC99111589F4B5CB2B9DBCF /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; name = "SplashScreen.xcodeproj"; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		F41D1033578C47FEA38BFDB3 /* libSplashScreen.a */ = {isa = PBXFileReference; name = "libSplashScreen.a"; path = "libSplashScreen.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		26A888BA7B52416D91EE5FB4 /* RNCookieManagerIOS.xcodeproj */ = {isa = PBXFileReference; name = "RNCookieManagerIOS.xcodeproj"; path = "../node_modules/react-native-cookies/ios/RNCookieManagerIOS.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		46E5296556F14E72B9AED01A /* libRNCookieManagerIOS.a */ = {isa = PBXFileReference; name = "libRNCookieManagerIOS.a"; path = "libRNCookieManagerIOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +385,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4EB81E2ED03847C08A5BF70C /* libRNCWebView.a in Frameworks */,
 				49BFB2872C41406684C7A791 /* libSplashScreen.a in Frameworks */,
+				D388595AC7BD4388B7D78B3C /* libRNCookieManagerIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +577,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				98AB14EE745B4D92B571D102 /* RNCWebView.xcodeproj */,
 				9FC99111589F4B5CB2B9DBCF /* SplashScreen.xcodeproj */,
+				26A888BA7B52416D91EE5FB4 /* RNCookieManagerIOS.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1202,11 +1207,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Debug;
@@ -1230,11 +1237,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Release;
@@ -1259,6 +1268,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Debug;
@@ -1282,6 +1292,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Release;
@@ -1313,11 +1324,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Debug;
@@ -1349,11 +1362,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Release;
@@ -1384,11 +1399,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Debug;
@@ -1419,11 +1436,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-cookies/ios/RNCookieManagerIOS",
 				);
 			};
 			name = Release;
