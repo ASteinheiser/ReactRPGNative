@@ -39,6 +39,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Launch_Screen" width="512" height="512"/>
+        <image name="Launch_Screen" width="200" height="200"/>
     </resources>
 </document>
