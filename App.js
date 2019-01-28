@@ -1,13 +1,22 @@
-import React               from 'react';
-import { StatusBar, View } from 'react-native';
-import { WebView }         from 'react-native-webview';
+import React, { Component } from 'react';
+import { StatusBar, View }  from 'react-native';
+import SplashScreen         from 'react-native-splash-screen';
+import { WebView }          from 'react-native-webview';
 
-export default function App(props) {
-  return (
-    <View style={{height: '100%'}}>
-      <StatusBar hidden />
+export default class App extends Component {
 
-      <WebView source={{uri: 'http://react-rpg.com'}} />
-    </View>
-  );
+  componentWillMount() {
+    // show splash screen for 1.5 sec
+    setTimeout(() => SplashScreen.hide(), 1500);
+  }
+
+  render() {
+    return (
+      <View style={{height: '100%'}}>
+        <StatusBar hidden />
+
+        <WebView source={{uri: 'http://react-rpg.com'}} />
+      </View>
+    );
+  }
 }
