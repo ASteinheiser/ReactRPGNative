@@ -1,0 +1,3 @@
+rootProject.name = 'ReactRPGNative'
+
+include ':app'
