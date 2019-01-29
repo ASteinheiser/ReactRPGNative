@@ -73,12 +73,7 @@ export default class App extends Component {
 }
 
 const Background = styled.View`
-  display: flex;
-  flex: 1;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 
   background-color: #0f0f0f;
 `

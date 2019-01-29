@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export default function Error(props) {
   return(
-    <React.Fragment>
+    <Centered>
       <ErrorText>
         {'Error loading...'}
       </ErrorText>
@@ -11,7 +11,7 @@ export default function Error(props) {
       <ErrorText>
         {'Please check your internet connection and try again.'}
       </ErrorText>
-    </React.Fragment>
+    </Centered>
   );
 }
 
@@ -22,4 +22,13 @@ const ErrorText = styled.Text`
   text-align: center;
 
   padding: 0 32px 8px;
+`
+
+const Centered = styled.View`
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
