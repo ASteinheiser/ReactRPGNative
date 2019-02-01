@@ -72,7 +72,7 @@ export default class App extends Component {
   }
 }
 
-const Background = styled.View`
+const Background = styled.SafeAreaView`
   height: 100%;
 
   background-color: #0f0f0f;
